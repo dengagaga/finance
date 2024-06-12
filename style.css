@@ -90,6 +90,7 @@ legend {
 }
 body {
     font-family: "Roboto", sans-serif;
+    
 }
 :root {
 	--main-color: grey;
@@ -103,40 +104,78 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 300px; */
     margin-bottom: 20px;
+    background-color: #494b3e;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: -70px;
 }
 .label {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    max-width: 250px;
+    width: 100%;
 }
 .input {
-    border: 1px solid black;
-    max-width: 200px;
-    padding: 5px 5px;
+    border: 1px solid white;
+    max-width: 250px;
+    width: 100%;
+    padding: 6px 8px;
     border-radius: 5px;
 }
 .form_btn {
     margin-top: 10px;
-    border: 1px solid black;
-    max-width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 150px;
+    width: 100%;
     padding:5px 10px;
 }
 .flex{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    border-bottom: 1px solid var(--main-color);
+    /* border-bottom: 1px solid var(--main-color); */
     width: 100%;
+    border: 1px solid gray;
+    background-color: #494b3e;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.catalog_logo {
+ position: absolute;
+ right: 20px;
+ top: 10px;
+}
+.catalog_logo svg{
+  width: 26px!important;
+}
+.flex_svg {
+  width: 20px;
+}
+.title-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .title-1 p {
-    max-width: 400px;
+    max-width: 435px;
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .flex:nth-child(1) {
-    border-top: 1px solid var(--main-color);
+    /* border-top: 1px solid var(--main-color); */
 }
 .all-price {
     margin-top: 20px;
@@ -172,7 +211,7 @@ body {
 .header {
     background-color: #639f85;
     border-radius:  0 0 15px 15px;
-    height: 54px;
+    height: 112px;
 }
 
 #menu__toggle {
@@ -245,4 +284,23 @@ body {
   }
   .menu__item:hover {
     background-color: #CFD8DC;
+  }
+
+
+  @media(max-width:500px) {
+    .title-1 p {
+      font-size: 15px;
+    }
+    .flex_btn {
+      font-size: 14px;
+    }
+    .flex_svg {
+      width: 35px;
+  }
+  }
+  @media(max-width:400px) {
+
+    .flex_svg {
+      width: 45px;
+  }
   }
