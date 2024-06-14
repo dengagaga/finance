@@ -108,11 +108,11 @@ body {
     align-items: center;
     /* max-width: 300px; */
     margin-bottom: 20px;
-    background-color: #494b3e;
+    background-color: #434f3f;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
-    margin-top: -70px;
+    margin-top: 0px;
 }
 .label {
     display: flex;
@@ -156,7 +156,7 @@ body {
  top: 10px;
 }
 .catalog_logo svg{
-  width: 26px!important;
+  width: 35px!important;
 }
 .flex_svg {
   width: 20px;
@@ -268,14 +268,15 @@ body {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #639f85;
+
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
   }
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -283,10 +284,91 @@ body {
     transition-duration: .25s;
   }
   .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #2121219f;
   }
 
 
+
+/*  SETTING */
+.title-1_setting {
+  font-size: 24px;
+  margin-top: -90px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+.setting_list {
+  margin-top: 80px;
+}
+.setting_list-item {
+  display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    /* border-bottom: 1px solid var(--main-color); */
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #494b3e;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.darkTime {
+  background-color: #000;
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.darkTime::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -4px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 27px;
+  height: 27px;
+  transition: all 0.3s ease-in;
+}
+.darkTime--active::before {
+  left: 36px;
+
+}
+.body--active {
+  background-color: #362f2f;
+  color: #fff;
+}
+/*  SETTING */
+/*  PROFIL */
+
+
+.form_prof {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header_prof {
+  height: 80px;
+}
+.title-1_prof {
+  font-size: 24px;
+  margin-top: -70px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+.input_profil {
+  border: 1px solid black;
+}
+
+/*  PROFIL */
+/*  MEDIA */
   @media(max-width:500px) {
     .title-1 p {
       font-size: 15px;
@@ -304,3 +386,4 @@ body {
       width: 45px;
   }
   }
+  /*  MEDIA */

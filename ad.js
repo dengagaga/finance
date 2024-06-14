@@ -12,6 +12,9 @@ let todo = []
 const LocalMoney = JSON.parse(localStorage.getItem('todo'));
 const LocalAllPrice = JSON.parse(localStorage.getItem('allPrice'));
 
+
+
+
 let initialValue = 0;
 function locStHtml() {
     if(localStorage.getItem('todo')) {
@@ -93,71 +96,6 @@ removeLoc()
 
 
 
-
-
-
-
-
-
-
-
-// if(localStorage.getItem('todo')) {
-//     LocalMoney.forEach(l => {
-//         const val = {
-//             id: `${todo.length + 1}`,
-//             profit: `${l.profit}`,
-//             balance: 10000,
-//             mounth: `${monthName}`,
-//               description: `${l.description}`
-//         }
-
-//         todo.push(val)
-//         title1.insertAdjacentHTML('beforeend', `<div class="flex" data-id="${todo.length}"><p>Заработал за ${monthName}: ${l.profit} руб. Заработал на ${l.description} </p><button class="flex_btn">Удалить</button></div>`)
-       
-//         const flexBtn = document.querySelectorAll('.flex_btn')
-        
-//         flexBtn.forEach(btn => {
-//             btn.onclick = () => {
-//              LocalMoney.forEach(l => {
-//                 if (l.id == btn.parentElement.dataset.id) {
-//                     // btn.parentElement.style.display = 'none'
-                    
-                    
-//                 }
-//              })
-            
-//         }
-//     })
-        
-//     })
-//     let sum = todo.reduce((accumulator, currentValue) => accumulator + +currentValue.profit,initialValue);
-//     allPrice.innerHTML = `<strong>Доход:</strong> ${sum} руб.`
-    
-// }
-
-
-// formBtn.addEventListener('click', (e) => {
-//    e.preventDefault()
-//    const inputValue = input1.value
-//    const inputValue2 = input2.value
-//     const val = {
-//         id: `${todo.length + 1}`,
-//         profit: `${inputValue}`,
-//         balance: 10000,
-//         mounth: `${monthName}`,
-//         description: `${inputValue2}`
-//     }
-//     todo.push(val)
-//     localStorage.setItem('todo', JSON.stringify(todo));
-//     title1.insertAdjacentHTML('beforeend', `<p>Заработал за ${monthName}: ${val.profit} руб. Заработал на ${inputValue2}</p>`) 
-//     input1.value= ''
-//     input2.value= ''
-
-//     let sum = todo.reduce((accumulator, currentValue) => accumulator + +currentValue.profit,initialValue);
-//     allPrice.innerHTML = `<strong>Доход:</strong> ${sum} руб.`
-
-   
-// })
 
 
 
