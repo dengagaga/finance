@@ -4,7 +4,7 @@ const input1 = document.querySelector('.input1')
 const input2 = document.querySelector('.input2')
 const list = document.querySelector('.list')
 const item = document.querySelector('.item')
-const allPrice = document.querySelector('.all-price')
+const allPrice = document.querySelector('.circle_text')
 
 const date = new Date();
 const monthName = date.toLocaleString('default', { month: 'long' });
